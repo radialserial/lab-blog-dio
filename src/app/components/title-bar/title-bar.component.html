@@ -1,19 +1,11 @@
-<!-- <h1>
-  @for (repeat of [].constructor(25); track $index) {
-    Bloguem Ipsum
+@for (
+  repeat of [].constructor(titleRepeatNumber);
+  track $index;
+  let idx = $index
+) {
+  @if (idx == halfwayNumber) {
+    <h1 style="color: red">Bloguem Ipsum&nbsp;</h1>
+  } @else {
+    <h1>Bloguem Ipsum&nbsp;</h1>
   }
-</h1> -->
-
-<div>
-  @for (
-    repeat of [].constructor(titleRepeatNumber);
-    track $index;
-    let idx = $index
-  ) {
-    @if (idx == halfwayNumber) {
-      <h1 style="color: red">Bloguem Ipsum&nbsp;</h1>
-    } @else {
-      <h1>Bloguem Ipsum&nbsp;</h1>
-    }
-  }
-</div>
+}

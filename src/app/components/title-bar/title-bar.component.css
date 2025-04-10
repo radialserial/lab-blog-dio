@@ -1,3 +1,11 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+}
+
 h1 {
   font-family: 'UnicaOne';
 
@@ -14,10 +22,4 @@ h1 {
     }
   }
 
-}
-
-div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
 }
