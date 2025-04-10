@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class TitleBarComponent {
 
+  // Repeat title so that it "spills out" of page stylistically
+  titleRepeatNumber = 25;
+  halfwayNumber = Math.floor(this.titleRepeatNumber / 2);
+
 }
