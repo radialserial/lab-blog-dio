@@ -3,6 +3,11 @@
   src: url('../assets/fonts/Unica_One/UnicaOne-Regular.ttf');
 }
 
+@font-face {
+  font-family: OpenSans;
+  src: url('../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
