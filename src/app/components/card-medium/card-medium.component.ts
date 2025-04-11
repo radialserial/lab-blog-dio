@@ -8,10 +8,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './card-medium.component.css'
 })
 export class CardMediumComponent {
-  @Input() title: string = "";
-  @Input() createdDate: Date = new Date();
-  @Input() synopsis: string = "";
-  @Input() author: string = "";
-  @Input() imageSrc: string = "";
-  @Input() articleIndex: any;
+  @Input({ required: true }) title!: string;
+  @Input({ required: true }) createdDate!: Date;
+  @Input({ required: true }) synopsis!: string;
+  @Input({ required: true }) author!: string;
+  @Input({ required: true }) imageSrc!: string;
+  @Input({ required: true }) contents!: string;
 }

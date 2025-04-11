@@ -8,10 +8,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './card-large.component.css'
 })
 export class CardLargeComponent {
-  @Input() title: string = "";
-  @Input() createdDate: Date = new Date();
-  @Input() synopsis: string = "";
-  @Input() author: string = "";
-  @Input() imageSrc: string = "";
-  @Input() contents: string = "";
+  @Input({ required: true }) title!: string;
+  @Input({ required: true }) createdDate!: Date;
+  @Input({ required: true }) synopsis!: string;
+  @Input({ required: true }) author!: string;
+  @Input({ required: true }) imageSrc!: string;
+  @Input({ required: true }) contents!: string;
 }
