@@ -1,11 +1,13 @@
-@for (
-  repeat of [].constructor(titleRepeatNumber);
-  track $index;
-  let idx = $index
-) {
-  @if (idx == halfwayNumber) {
-    <h1 style="color: red">Bloguem Ipsum&nbsp;</h1>
-  } @else {
-    <h1>Bloguem Ipsum&nbsp;</h1>
+<a [routerLink]="'/'">
+  @for (
+    repeat of [].constructor(titleRepeatNumber);
+    track $index;
+    let idx = $index
+  ) {
+    @if (idx == halfwayNumber) {
+      <h1 style="color: red">Bloguem Ipsum&nbsp;</h1>
+    } @else {
+      <h1>Bloguem Ipsum&nbsp;</h1>
+    }
   }
-}
+</a>
