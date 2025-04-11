@@ -1,4 +1,4 @@
-<a [routerLink]="'/article/0'" class="newscard__highlight">
+<a [routerLink]="'/article/' + slug(title)" class="newscard__highlight">
   <img [src]="imageSrc" alt="Article image" />
   <div class="card-contents">
     <h1>{{ title }}</h1>

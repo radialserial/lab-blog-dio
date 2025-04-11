@@ -1,0 +1,13 @@
+<app-title-bar></app-title-bar>
+
+<h1>{{ article.title }}</h1>
+<h3>{{ article.synopsis }}</h3>
+
+<img [src]="article.imageSrc" alt="Article Image" />
+
+<p>{{ article.author }}</p>
+<p>{{ article.createdDate.toDateString() }}</p>
+
+<div [innerHTML]="article.content"></div>
+
+<div [innerHTML]="article.content"></div>

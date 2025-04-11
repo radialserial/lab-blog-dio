@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import Utils from '../../util';
 
 @Component({
   selector: 'app-card-large',
@@ -14,4 +15,6 @@ export class CardLargeComponent {
   @Input({ required: true }) author!: string;
   @Input({ required: true }) imageSrc!: string;
   @Input({ required: true }) contents!: string;
+
+  slug = Utils.slug;
 }

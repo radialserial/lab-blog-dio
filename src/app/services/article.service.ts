@@ -1,15 +1,12 @@
 import { Injectable } from '@angular/core';
 import articlesData from '../../../mock/articles.json';
 import { Article } from '../model/Article';
+import Utils from '../util';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ArticleService {
-
-  articlesJSON = JSON.stringify(articlesData)
-
-  constructor() { }
 
   getArticles(): Article[] {
     return articlesData.map(articleFromJson => {
@@ -22,6 +19,18 @@ export class ArticleService {
         imageSrc: articleFromJson.imageSrc,
       };
     })
+  }
+
+  getArticle(articleSlug: string): Article {
+    const articles = this.getArticles();
+
+    for (let index = 0; index < articles.length; index++) {
+      if (Utils.slug(articles[index].title) === articleSlug) {
+        return articles[index];
+      }
+    }
+
+    throw ("Article does not exist.")
   }
 
 }
