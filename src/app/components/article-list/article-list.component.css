@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2%;
+  width: fit-content;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.newscard__regular {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.newscard__highlight {
+  flex: 5;
+}

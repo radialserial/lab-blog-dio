@@ -1,0 +1,10 @@
+<a [routerLink]="'/article/0'" class="newscard__highlight">
+  <img [src]="imageSrc" alt="Article image" />
+  <div class="card-contents">
+    <h1>{{ title }}</h1>
+    <p class="synopsis">{{ synopsis }}</p>
+    <p class="author">by {{ author }}</p>
+    <p class="created-date">{{ createdDate.toDateString() }}</p>
+    <div class="article-contents" [innerHTML]="contents"></div>
+  </div>
+</a>

@@ -1,0 +1,23 @@
+<app-card-large
+  class="newscard__highlight"
+  [title]="articleList[0].title"
+  [createdDate]="articleList[0].createdDate"
+  [synopsis]="articleList[0].synopsis"
+  [author]="articleList[0].author"
+  [imageSrc]="articleList[0].imageSrc"
+  [contents]="articleList[0].content"
+></app-card-large>
+<div class="newscard__regular">
+  @for (article of articleList; track article; let idx = $index) {
+    @if (idx != 0) {
+      <app-card-medium
+        [title]="article.title"
+        [createdDate]="article.createdDate"
+        [synopsis]="article.synopsis"
+        [author]="article.author"
+        [imageSrc]="article.imageSrc"
+        [articleIndex]="idx"
+      ></app-card-medium>
+    }
+  }
+</div>
