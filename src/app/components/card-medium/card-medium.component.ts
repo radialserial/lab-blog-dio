@@ -14,7 +14,6 @@ export class CardMediumComponent {
   @Input({ required: true }) synopsis!: string;
   @Input({ required: true }) author!: string;
   @Input({ required: true }) imageSrc!: string;
-  @Input({ required: true }) contents!: string;
 
   slug = Utils.slug;
 }
