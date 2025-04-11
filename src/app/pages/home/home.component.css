@@ -1,7 +1,3 @@
-:host {
-  font-family: 'OpenSans';
-}
-
 .container {
   display: flex;
   flex-direction: column;
